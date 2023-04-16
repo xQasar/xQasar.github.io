@@ -1,0 +1,210 @@
+/* OBT SECTION ON PLAY.PHP */
+
+.obt-launcher-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.obt-launcher-container {
+    /* border: 5px rgba(255, 230, 0, 0.637) dotted; */
+    padding: 0;
+    width: 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    /* padding: 40px 20px; */
+    background: linear-gradient(
+        270deg,
+        rgba(14, 5, 5, 0) 8.45%,
+        rgba(164, 59, 37, 0.3) 24.28%,
+        rgba(226, 49, 12, 0.5) 42.19%,
+        rgba(226, 49, 12, 0.5) 53.5%,
+        rgba(164, 59, 37, 0.3) 68.65%,
+        rgba(14, 5, 5, 0) 87.98%
+    );
+}
+@media (max-width: 780px) {
+    .obt-launcher-container {
+        /* border: 5px rgba(255, 230, 0, 0.637) dotted; */
+        margin: 20 20px;
+        width: 100%;
+    }
+}
+
+.obt-announce-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    position: relative;
+}
+.obt-announce-container .obt-launcher-link {
+    margin-top: 0;
+}
+
+.obt-col-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.obt-launcher-heading {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 22px;
+}
+
+.obt-launcher-link {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 16px 15px;
+}
+.obt-launcher-link-asterisk {
+    font-weight: normal;
+}
+
+.obt-launcher-download-note {
+    color: #FFDED8;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.obt-warning-line {
+    background: url(../img/obt_warning_line4.png) no-repeat top center;
+    border-radius: 6px;
+    height: 25px;
+    width: 100%;
+    opacity: 0.95;
+}
+@media (max-width: 780px) {
+    .obt-warning-line {
+        border-radius: 0;
+    }
+}
+
+
+.obt-warning-sign {
+    position: absolute;
+    right: -15%;
+}
+@media (max-width: 700px) {
+    .obt-warning-sign {
+        top: -47px;
+        right: 0;
+    }
+    .obt-warning-sign img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+/* REST OF PAGES, AFFECTED BY OBT */
+
+
+.obt-link-version-choice {
+    margin-top: 3rem;
+}
+
+.obt-link-version-choice-title {
+    text-align: center;
+    white-space: nowrap;
+
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+.obt-link-version-choice-title .version-word {
+    color: #E4360D;
+}
+
+
+.obt-dwld-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media (min-width: 482px) {
+    .obt-dwld-buttons {
+        flex-direction: row;
+        width: 480px;
+    }
+}
+
+.obt-launcher-link {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.25rem;
+    padding: 1.1rem .75rem;
+    border: 1px solid #FFDED8;
+    background: radial-gradient(50% 299.18% at 50% 50%, #E2310C 0%, rgba(226, 49, 12, 0) 100%);
+    border-radius: 7px;
+    text-align: center;
+
+    color: #FFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+.obt-launcher-link:hover {
+    color: #FFF;
+    opacity: .8;
+}
+
+
+.obt-link-note-short {
+    width: 20rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    text-align: center;
+
+    color: #FFF;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.obt-link-note-long {
+    width: 20rem;
+    padding: 1rem;
+    text-align: center;
+
+    color: #FFF;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+}
+.obt-link-note-long .link {
+    color: white;
+    font-weight: bold;
+}
+.obt-link-note-long .link:visited {
+    color: white;
+}
+.obt-link-note-long .link:hover {
+    color: #ccc;
+}
